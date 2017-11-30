@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-11-30 08:45:17
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-11-30 09:35:13
+* @Last Modified time: 2017-11-30 09:54:21
 */
 @charset "utf-8";
 *{
@@ -189,3 +189,35 @@ section{
 .current{
     background:red;
 }
+  footer{
+  @include num($h:.5rem);
+  background:#F5F5F5;
+  display:flex;
+  align-items:center;
+  border-top:.01rem solid #D9D9D9;
+  a{
+  @include flex($j:space-around);
+  flex:1;
+  flex-direction:column;
+  i.icon{
+  color:#5F646E;
+  font-size:.22rem;
+  &:hover{
+  color:#FF5000;
+  }
+  &.cur{
+color:#FF5000;
+  }
+  }
+  span{
+  color:#5F646E;
+  font-size:.16rem;
+  &:hover{
+  color:#FF5000;
+  }
+  &.cur{
+color:#FF5000;
+  }
+  }
+  }
+  }
